@@ -1,5 +1,5 @@
-# Devon Keen's Personal Website
+# Omar Sardena's Personal Website
 
-ChainsawRambo = Devon Keen
+ChainsawRambo = Devon Keen  (Mini-Project 2 Partner)
 
-osardena = Omar Sardena (Mini-Project 2 Partner)
+osardena = Omar Sardena 
