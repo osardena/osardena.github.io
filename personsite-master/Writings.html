@@ -48,76 +48,250 @@
   <div id="main">
     <div id="content" class="float_left gr_width_large">
       <div id="article_title">
-        <h1 class="reset_margin_padding">Linux and Git Tutorial</h1>
+        <h1 class="reset_margin_padding">Linux Commands and Git Tutorial</h1>
       </div>
       <div id="article_body">
-        <p>
-1. cd - a Linux command used to change the current working directory in Linux and other Unix-like operating systems. To use, type "cd (insert name of directory)".
-<br><br>
-2. mkdir - a Linux command that allows the user to create directories (also referred to as folders in some operating systems ). This command can create multiple directories at once as well as set the permissions for the directories. To use, type "mkdir (insert name of directory here)". 
-<br><br>
-3. cp - a Linux command used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name. cp command requires at least two filenames in its arguments. To use, type "cp (file 1) (file 2)".
-<br><br>
-4. pwd - a Linux command line utility for printing the current working directory. It will print the full system path of the current working directory to standard output. By default the pwd command ignores symlinks, although the full physical path of a current directory can be shown with an option. To use, type "pwd".
-<br><br>
-5. mv - a Linux command line utility that moves files or directories from one place to another. It supports moving single files, multiple files and directories. It can prompt before overwriting and has an option to only move files that are new than the destination. To use, type "mv (old file) (new file)".
-<br><br>
-6. rm - a Linux command that stands for remove here. rm command is used to remove objects such as files, directories, symbolic links and so on from the file system like UNIX. To use, type "rm (file)".
-<br><br>
-7. history - a Linux command that keeps a list of all the other commands that have been run from that terminal session, then allows you to replay or reuse those commands instead of retyping them. To use, type "history".
-<br><br>
-8. Home directory and ~ - a home directory, also called a login directory, is the directory on Unix-like operating systems that serves as the repository for a user's personal files, directories and programs. The ~ symbol stands for a "tilde" to denote a user's home directory. Thus tilde slash (~/) is the beginning of a path to a file or directory below the user's home directory. ... Note: Quite often, the succeeding file or directory name is preceded by a period (".") which indicates that it is hidden (in Linux).
-<br><br>
-9. file paths in linux - A file path is the human-readable representation of a file or folder’s location on a computer system. Ex: /home/seth/Pictures/penguin.jpg . Can be found by typing "pwd" where you want to know the file path.
-<br><br>
-10. Using the tab key to complete file paths - this is a way to complete a file path without typing it out entirely. To use, start typing the file path, then press tab, and if you typed it correctly so far, it finishes it for you.
-<br><br>
-11. Using up and down arrow for history - this is a way to access previous commands typed in a terminal using the up and down arrow keys. To use, press the up arrow key after previously entering in commands to navigate previous commands.  To go back, press the down arrow key to return to newer commands you typed.
-<br><br>
-References: Material from IT 340 as well as Google definitions (https://www.google.com/)
-<br><br>
-        </p>
-        <p>
-          
-        </p>
-        <p>
-          
-        </p>
-        <p>
-1. Repository is a place where all changes made to your files in a project is stored over time. It is a place where data and code is stored for projects.
-<br><br>
-2. Clone is a git command line which is used to clone or copy an existing repository. To use clone, you type $ git clone <url of the repository you cloned> + the place you want to clone it 
-<br><br>
-3. Fork is a copy of a repositoy, it allows you to make changes to a project without affecting the original project. to use fork in github you go to the repository you want to fork and click the fork button in the top right side.
-<br><br>
-4. Branch is a git command that lets you create a new branch or timeline of commits, changes and file additions that are complety your won. A branch represents a series of commits.  To use branch you type $ git branch-d 
-<br><br>
-5. Commit is a git command used to save your changes to a local repository or to make changes to a repository. To use git commit, you type $ git commit -m  
-<br><br>
-6.Merge is a git command that allows you to take multiple different branches and integrate them together into a single branch. To use merge, you type $ git merge origin/master
-<br><br>
-7. Checkout is a git command that lets you navigate between branches. Checkout makes sure the branch files is up to date with the version stored in a branch. to use checkout, you type $ git checkout-b
-<br><br>
-8. Push is a git command that is used to upload local repository to a remote repository. Push command is how you transfer commits from your local repository to a remote repository. to use git push, you type $ git push origin master
-<br><br>
-9. Pull is a command that is used to get and download content from a remote repository. Then update the local repository to match the content. To use git pull, you type $ git pull origin master
-<br><br>
-10. Remote Add/Remove/show  is a git commad on how to manage remote repositories. It lets you create, view and delete changes to alter a repository. to use remote, ypu type $ git remote add origin <link>
-<br><br>
-11. Status  is a git command that displays the state of the working directory and the staging area. Git status lets you see what changes have occured and which files have been uploaded. $ git status
- <br><br>
-12. Master branch- is the default branch. The master branch is the original repository that is cloned or forked to create new branches. Master branch appers when making commits to a local repository. 
-<br><br>
-Git flow
-  <br><br>        
-Git flow is a branching model for Git, it is best suited for projects that have a scheduled release cycle. Gitflow assigns specific roles to differetn branches and how to merge branches together. Gitflow makes collaborating on a project much easier and it allows to follow that others are doing in your project. 
-<br><br>
-References: atlassian.com and google
-  <br><br>        
-Credit for Git Tutorial by Kofi Otu-Manteaw in collaboration with myself for Mini-Project 1
-<br><br>
-        </p>
-        <p>
+        <h1 id="basiclinuxandvicommandsneededtomanageafilesystem"><strong>Basic Linux and Vi Commands Needed to Manage a File System</strong></h1>
+
+<h2 id="7basiclinuxcommandstomanageafilesystem">7 Basic Linux Commands to Manage a File System.</h2>
+
+<h3 id="1cdchangedirectory"><strong>1. cd [change directory]</strong></h3>
+
+<p><code>cd</code> is the "change directory" command, used for changing the current working directory that you are in. A directory is essentially like a folder, which may contain files and other directories. Your current working directory is the "folder" in which you are currently in.</p>
+
+<p>To use the cd command, type on the terminal cd and then the path of the directory you want to change into, in this format: <code>cd directorypath</code>. It is important to put a space between the command and the argument passed into it.</p>
+
+<p>The following are some common cd commands:</p>
+
+<ul>
+<li><code>cd /</code>: this command takes changes you into the root directory--the first file directory in your filesystem hierarchy.</li>
+
+<li><code>cd /directory1/directory2/directory3</code>: This commands takes you inside a subdirectory in another directory.
+
+
+<ul>
+<li>For example: <code>cd /home/student/Documents/</code> would take you to the Documents directory inside the student directory</li>
+
+<li>If you are already in a directory and want to travel into a subdirectory, you would not have to provide the full path to that directory. Instead, you can provide the relative path
+
+
+<ul>
+<li>If there was a subdirectory called Projects in the Documents directory you were already in, you would only need to type 'cd Projects' to change into that directory.</li></ul>
+</li></ul>
+</li>
+
+<li>The <code>cd ~</code> and <code>cd</code> commands take you to your home directory, no matter what your current working directory is.</li>
+
+<li><code>cd ..</code> changes you into the parent directory--that is the directoy one level up from the directory you are in.
+
+
+<ul>
+<li>From the previous example, if your current working directory is Projects, then typing <code>cd ..</code> would take you back to the Documents directory.</li></ul>
+</li>
+</ul>
+
+<p align="center">
+<img src="https://www.guru99.com/images/sub-directory(1).png">
+</p>
+
+<h3 id="2pwdprintworkingdirectory"><strong>2. pwd [print working directory]</strong></h3>
+
+<p><code>pwd</code> is the "print working directory" command, used for display the current directory the user is in. It is a useful command when unsure of the directory you are in or to view the full path of your directory. To use it, simply type <code>pwd</code> on the command line and it will display the full path of your current directory.</p>
+
+<ul>
+<li>To see all the files inside your working directory, you can use the <code>ls</code> command or the <code>ls -l</code> command. The <code>ls</code> command is the list command and shows you a list of all the files in the working directory. The <code>ls -l</code> command is the long list command, showing you the same information as <code>ls</code> but formatted differently.</li>
+</ul>
+
+<h3 id="3mkdirmakedirectoy"><strong>3. mkdir [make directoy]</strong></h3>
+
+<p><code>mkdir</code> is the "make directory" command, used for making a new directory. To use it, type mkdir, a space, and the name of the new directory you wish to create: <code>mkdir nameofnewdirectory</code>. Again, it is important to add a space between the command and the argument passed to it. </p>
+
+<ul>
+<li>Note: <code>mkdir nameofnewdirectory</code> will create that new directory inside of your current working directory.
+
+
+<ul>
+<li>If you wish to create a directory outside of your current working directory, you can type mkdir, followed by a space, and then the full path of the new directory. 
+
+
+<ul>
+<li>For example, if one wanted to create a new directory named 'Homework' inside the Documents directory, one would type: <code>mkdir /home/student/Documents/Homework</code></li></ul>
+</li></ul>
+</li>
+</ul>
+
+<h3 id="4cpcopy"><strong>4. cp [copy]</strong></h3>
+
+<p><code>cp</code> is the "copy" command, used for making copies of the content of files and directories. It creates an exact copy of the contents in the files/directories. The syntax for the cp command is: <code>cp [option] source destination</code> where <strong>source</strong> is the file you want to copy and <strong>destination</strong> is where you want to copy it to. Copies the files with the same name!</p>
+
+<ul>
+<li><p>Note: source and destination can be directories or files</p></li>
+
+<li><p>There are many options that can be used along with the cp command. To read about them all, you can type <code>man cp</code> on your command line. </p>
+
+<p><ul>
+<li>Some common ones are:</p>
+
+<p><ul>
+<li><strong>-v</strong> - Be verbose. Shows the files are they are being copied</li></p>
+
+<p><li><strong>-n</strong> - Do not overwrite an existing file</li></p>
+
+<p><li><strong>-i</strong> - Causes cp to write a prompt to the standard error output before copying a file that would overwrite an existing file.</li></p>
+
+<p><li><strong>-p</strong> - Preserves the modification time, access time, file flags, file mode, user ID, and group ID, as allowed by permissions, in the copy.</li></ul>
+
+<p></li></ul></p></li></p>
+
+<p><li><p>Using cp with two files</p></p>
+
+<p><ul>
+<li><code>cp file1 file2</code> - copies the contents of <strong>file1</strong> to the <strong>file2</strong>. </p>
+
+<p><ul>
+<li>If <strong>file2</strong> doesn't exist, then it will create a file with that name. However, if that file exists, it will overwrite the contents of that file.</li></ul>
+</li></ul></p>
+
+<p></li></p>
+
+<p><li><p>Using cp with two directories</p></p>
+
+<p><ul>
+<li><code>cp -R dir1 dir2</code> - copies the contents and subdirectories in <strong>dir1</strong> onto <strong>dir2</strong>. </p>
+
+<p><ul>
+<li>It is necessary to use the -R option (causes cp to be recursive and copy any and all subdirectories)   </li></ul>
+</li></ul></p>
+
+<p></li></p>
+
+<p><li><p>Copying two or more files</p></p>
+
+<ul>
+<li><code>cp file1 file2 file3 directory</code> - copies <strong>file1, file2, and file3</strong> into <strong>directory</strong>.
+
+
+<ul>
+<li>If <em>directory</em> does not exist, it will create one. But if it does exist, it will overwrite it.</li></ul>
+</li></ul>
+
+<h3 id="5mvmovefiles"><strong>5. mv [move files]</strong></h3>
+
+<p></li>
+</ul></p>
+
+<p><code>mv</code> is the move command, used to move a file or directory to a different location. Unlike <code>cp</code>, which copies a file/directory onto a different location and leaves the original file where it is, <code>mv</code> moves the original to a different location and deletes it from where it previously was. </p>
+
+<p>To syntax to use the <code>mv</code> command is: <code>mv [option] source destination</code>. where <strong>source</strong> is the file you want to copy and <strong>destination</strong> is where you want to copy it to.</p>
+
+<ul>
+<li>Note: You can also use <code>mv</code> to rename files. The syntax for that is: <code>mv fileyouwanttorename newname</code>
+
+
+<ul>
+<li>Example:
+<code>
+ $ls
+ file1    file2    file3
+ $mv file1 newNameForFile1
+ $ls
+ file2 file3 newNameForFile1
+</code></li></ul>
+</li>
+
+<li>[options] can be found by typing <code>man mv</code> on the command line.</li>
+</ul>
+
+<h3 id="6rmremove"><strong>6. rm [remove]</strong></h3>
+
+<p><code>rm</code> is the remove command, used to remove directories entries. Be careful when using this command because once you remove files, you cannot recover them.</p>
+
+<ul>
+<li>Syntax:
+
+
+<ul>
+<li>To delete a file: <code>rm filename</code> where <strong>filename</strong> is the name of the file you want to delete</li>
+
+<li>To delete multiple files: <code>rm file1 file2 file3 file4</code></li>
+
+<li>To delete <strong>empty</strong> directories: <code>rm -d directoryname</code> or <code>rmdir directoryname</code>
+
+
+<ul>
+<li>Emphasis on empty!</li></ul>
+</li>
+
+<li>To delete <strong>all</strong> the files and sub-directories in a directory: <code>rm -r directoryname</code>
+<em>More syntax options can be found by typing <code>man rm</code> on the command line</em></li></ul>
+</li>
+</ul>
+
+<h3 id="7history">7. history</h3>
+
+<p>The <code>history</code> command is used to display the last 500 commands invoked in your account. To use it, simply type <code>history</code> on your command line.</p>
+
+<ul>
+<li>You can invoke any of the commands shown in the history by typing the ‘!’ followed by the command number</li>
+
+<li>The command <code>history –c</code> clears the history buffer</li>
+</ul>
+
+<h2 id="basiclinuxconcepts">Basic Linux Concepts</h2>
+
+<h3 id="homedirectoryandt">Home directory and ~</h3>
+
+<p>When you log into a Linux system, you are automatically placed in the home directory. A home directory is a private place for the user to store their files. <code>~</code> is the short form for your home directory. It can be used to substitute <code>/home/username</code> in filepaths.  </p>
+
+<p>There is a shortcut to immediately go back to your home directory--no matter where your current working directory is: simply type <code>cd</code> or <code>cd ~</code>. </p>
+
+<h3 id="filepathsinlinux">File Paths in Linux</h3>
+
+<p>A file path tells you the location of where a file or folder is on your computer. When a file is inside a folder or a folder is inside another folder, a forward slash (<strong>/</strong>) is used to show this hierarchy. For example, if a file named <strong>index.html</strong> is in a folder called <strong>IS117</strong> which is in your <strong>Documents</strong> folder, then the file path for that file would be <strong>/home/user/Documents/IS117/index.html</strong>. The forward slashes symbolize that one item is stored inside of the item before it.</p>
+
+<p>To quickly see the file path of where you currently are in your system, type <code>pwd</code> and it will give you the full path to your position.</p>
+
+<p>File paths can be used to change directories; by typing <code>cd</code> followed by a space and then the filepath. </p>
+
+<p>Example of a file system hierarchy: </p>
+
+<p align="center">
+<img src="https://www.ocf.berkeley.edu/~shidi/cs61a/w/images/0/00/Filesystem_tree.png">
+</p>
+
+<h3 id="usingthetabkeytocompletefilepaths">Using the tab key to complete file paths</h3>
+
+<p>Provided that you correctly type and are using a command, if you begin to type the filepath of the file/directory you intend to use then Linux will autocomplete the rest of the path for you when using the tab key.</p>
+
+<p>For example, using the previous example, if you were to type <code>cd Documents/IS</code> and then pressed the tab key, it would auto complete it to <code>cd Documents/IS117/</code>. If you were to press the tab key again without typing anything, then Linux would try to guess the file you were trying to change into. If the only file inside that folder was index.html, then it would be autocompleted into <code>cd Documents/IS117/index.html</code>. </p>
+
+<p>This method is often used to save time or to ensure the correct spelling of complicatedly-named files. </p>
+
+<h3 id="usingupanddownarrowforhistory">Using up and down arrow for history</h3>
+
+<p>A final shorcut many people use on Linux systems is using the up and down arrows in the keyboard for history. Hitting the up arrow in a terminal will show you the previous entered command in the terminal. If you continue to press the up arrows, it will show you the previous entered command before that, and so on. </p>
+
+<p>This is used to avoid repeating common commands. Also, if you made a mistake when typing a command and wanted to fix it without having to retype everything, then just hit the up arrow until you find the command and then fix the typo. </p>
+
+<h2 id="viandusage">Vi and Usage</h2>
+
+<p>Vi is a text editor that can be used to edit plain texts and programs. Vi runs in three modes:</p>
+
+<p><strong>1. Command Mode</strong> - This mode accepts commands, which are usually single letters. For instance, <em>i</em> enters into insert mode and <em>o</em> opens a line below the current one.</p>
+
+<p><strong>2. Execute Mode</strong> - This mode manipulate files, like saving files and running outside programs. You enter execute mode by typing a colon (<strong>:</strong>), and followed by the command you want to use.  For example, <em>w</em> saves the file and <em>q</em> quits Vi and returns to the terminal.</p>
+
+<p><strong>3. Insert Mode</strong> - This mode is used to enter or edit text. You enter insert mode by typing <em>i</em> or <em>a</em>.</p>
+
+<ul>
+<li><em>i</em> - When entering insert mode with the <em>i</em> command, whatever you type will appear to the left of the character the cursor was over.</li>
+
+<li><em>a</em> - When entering insert mode with the <em>a</em> command, whatever you type will appeart to the right of the word that the cursor is over.</li>
+</ul>
+
+<h3 id="creatingandoreditingafileusingvi">Creating and/or editing a file using Vi</h3>
+
+<p>To create or edit a file using Vi, simply type <code>vi filename</code> where <strong>filename</strong> is the name of the file you want to create or edit. If a file with that name does not exist, vi will create one in your current working directory. If a file with that name does exist, vi will allow you to edit that.</p>
           
         </p>
       </div>
@@ -131,7 +305,7 @@ Credit for Git Tutorial by Kofi Otu-Manteaw in collaboration with myself for Min
 
   </div>
   <div id="footer" class="clear_float text_center">
-    © Devon Keen -
+    © Omar Sardena -
     <script type="text/javascript">
         var d = new Date()
         document.write(d.getFullYear())
