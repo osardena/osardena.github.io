@@ -164,6 +164,7 @@ textarea {
 }
 #side_photo {
   width: 320px;
+  transform:rotate(90deg);
 }
 .text_center {
   text-align: center;
