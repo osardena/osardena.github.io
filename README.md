@@ -1,3 +1,3 @@
-# ChainsawRambo.github.io
+# Osardena.github.io
 
-To view website use this URL https://chainsawrambo.github.io/personsite-master/
+To view website use this URL https://osardena.github.io/personsite-master/
