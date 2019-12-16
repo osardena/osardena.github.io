@@ -1,3 +1,4 @@
 # Osardena.github.io
 
-To view website use this URL https://osardena.github.io/personsite-master/
+To view website for Mini 2 use this URL https://osardena.github.io/personsite-master/
+To view website using Bootstrap for Mini 3 this URL https://osardena.github.io/bootstrapsite/
